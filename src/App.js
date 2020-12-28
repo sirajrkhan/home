@@ -5,7 +5,7 @@ import CardExample from './components/Card/Card';
 
 function App() {
   return (
-    <>
+    <div className="container">
       <Topnav />
       <div className="jumbotron">
         <p>Think of a content here!!!</p>
@@ -15,13 +15,12 @@ function App() {
       </div>
       <div class="container">
         <div class="row">
-          <CardExample />
-          <CardExample />
-          <CardExample />
+          <CardExample title="Bird One" subTitle="Such a beautiful bird" />
+          <CardExample title="Bird Two" subTitle="Such a Pretty bird" />
+          <CardExample title="Bird Three" subTitle="Isn't it the same bird?" />
         </div>
       </div>
-    </>
-
+    </div>
   );
 }
 export default App;
